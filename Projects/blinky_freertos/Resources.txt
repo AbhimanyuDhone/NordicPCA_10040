@@ -1,2 +1,11 @@
 https://www.freertos.org/a00130.html
 -> Task create and Task Suspend
+
+https://www.freertos.org/FreeRTOS_Support_Forum_Archive/August_2016/freertos_Usage_Fault_hard_fault_within_portYIELD_WITHIN_API_0efed9eej.html
+-> hard fault issue
+
+https://www.freertos.org/RTOS-idle-task.html
+-> Idle task
+
+https://www.freertos.org/tutorial/index.html
+->demo application and design example using FreeRtos

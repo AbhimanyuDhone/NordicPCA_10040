@@ -85,8 +85,9 @@
 
 TaskHandle_t  led_toggle_task_handle;   /**< Reference to LED0 toggling FreeRTOS task. */
 TimerHandle_t led_toggle_timer_handle;  /**< Reference to LED1 toggling FreeRTOS timer. */
+TaskHandle_t idle_task_handle;
 
-bool Task_run_status= false;
+uint8_t Task_run_status= 0;//0: 1st entry; 1: Task running ; 2: Task suspended; 
 /**@brief LED0 task entry function.
  *
  * @param[in] pvParameter   Pointer that will be used as the parameter for the task.
@@ -105,6 +106,13 @@ static void led_toggle_task_function (void * pvParameter)
     }
 }
 
+void idle_task ()
+{
+  while (true)
+  {
+  }
+  
+}
 /**@brief The function to call when the LED1 FreeRTOS timer expires.
  *
  * @param[in] pvParameter   Pointer that will be used as the parameter for the timer.
@@ -116,23 +124,54 @@ static void led_toggle_timer_callback (void * pvParameter)
 }
 
 void in_pin_handler(nrf_drv_gpiote_pin_t pin, nrf_gpiote_polarity_t action)
+/*Issue: The function is called upon press as well as release 
+         it was assumed that this function is called only when
+         the button is pressed
+  Resolution: Add logic to differentiate between button press and release 
+*/
 {
-//    if(Task_run_status == false)
-//    {
-      /* Create task for LED0 blinking with priority set to 2 */
-      UNUSED_VARIABLE(xTaskCreate(led_toggle_task_function, "LED0", configMINIMAL_STACK_SIZE + 200, NULL, 2, &led_toggle_task_handle));
-//      Task_run_status= true;
-//    }
-//    else
-//    {
-      // Use the handle to suspend the created task.
-//      vTaskSuspend(&led_toggle_task_handle);
-//      Task_run_status= false;
-//    }
-    /* Start timer for LED1 blinking */
-//    led_toggle_timer_handle = xTimerCreate( "LED0", TIMER_PERIOD, pdTRUE, NULL, led_toggle_timer_callback);
-//    UNUSED_VARIABLE(xTimerStart(led_toggle_timer_handle, 0));
-
+  bool press = bsp_board_button_state_get(0);
+  if (press)
+  {  
+      switch (Task_run_status)
+      {
+        case 0:
+            /* Create task for LED0 blinking with priority set to 2 */
+            Task_run_status= 1; // set the task to running state
+            UNUSED_VARIABLE(xTaskCreate(led_toggle_task_function, "LED0", configMINIMAL_STACK_SIZE + 200, NULL, 2, &led_toggle_task_handle));
+            break;
+        case 1:
+            // Use the handle to suspend the created task.
+            bsp_board_led_off(BSP_BOARD_LED_0);
+            Task_run_status= 2;// set the task to suspend state
+            vTaskSuspend(&led_toggle_task_handle);
+            break;
+        case 2:
+            bsp_board_led_on(BSP_BOARD_LED_0);
+            // Use the handle to resume the created task.
+            //vTaskResume(&led_toggle_task_handle);
+            Task_run_status= 1;// set the task to running state
+            break;
+      }
+  }
+//      if (Task_run_status == 0)
+//      {
+//            /* Create task for LED0 blinking with priority set to 2 */
+//       //     Task_run_status= 1; // set the task to running state
+//       //     UNUSED_VARIABLE(xTaskCreate(led_toggle_task_function, "LED0", configMINIMAL_STACK_SIZE + 200, NULL, 2, &led_toggle_task_handle));
+//       }
+//       else if (Task_run_status == 1)
+//       {
+//            // Use the handle to suspend the created task.
+//            bsp_board_led_off(BSP_BOARD_LED_0);
+//            vTaskSuspend(&led_toggle_task_handle);
+//            Task_run_status= 2;// set the task to suspend state
+//       }
+//       else if (Task_run_status == 2) 
+//       {     // Use the handle to resume the created task.
+//            vTaskResume(&led_toggle_task_handle);
+//            Task_run_status= 1;// set the task to running state
+//       }
 }
 /**
  * @brief Function for configuring: PIN_IN pin for input, PIN_OUT pin for output,
@@ -178,11 +217,12 @@ int main(void)
 
     /* Configure LED-pins as outputs */
     bsp_board_init(BSP_INIT_LEDS);
-
+   // vApplicationIdleHook( );
+    idle_task();
     gpio_init();
     /* Activate deep sleep mode */
     SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
-
+    
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
 
