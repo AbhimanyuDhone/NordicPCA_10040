@@ -59,7 +59,13 @@
 #define GENERIC_DELAY_TIME               1000                           /**< Generic delay time used by application. */
 #define PUMP_TIMEOUT_VALUE               31250                           /**< 1 second Time out value used for pump on / off by application. */
 
+#define PUMP_ACTIVATION_INTERVAL             15                             /**< Indicates time in seconds between pump activation*/
+#define PUMP_ACTIVE_TIME                     5                             /**< Indicates time in seconds the pump is activated*/
 
+/* LED 0: System timer
+ * LED 1: Application indicator
+ * LED 2: Pump indicator
+ */
 
 /**@brief Application states. */
 typedef enum
@@ -123,14 +129,53 @@ void system_timeout_handler(void * p_context)
 void pump_timeout_handler(void * p_context)
 {
     pump_tick_counter++;
-    uint32_t err_code = app_simple_timer_start(APP_SIMPLE_TIMER_MODE_SINGLE_SHOT,
+}
+
+/*
+ * Function for responding to system trigger.
+ */
+void system_response(void)
+{
+  bsp_board_led_off(BSP_BOARD_LED_0);
+  uint32_t err_code = app_simple_timer_stop();
+  //uint32_t err_code = app_simple_timer_uninit();
+  APP_ERROR_CHECK(err_code);
+  err_code = app_simple_timer_start(APP_SIMPLE_TIMER_MODE_REPEATED,
                                        pump_timeout_handler,
                                        PUMP_TIMEOUT_VALUE,
                                        NULL);
-    APP_ERROR_CHECK(err_code);
+  APP_ERROR_CHECK(err_code);
+
+  /*LED turned on to indicate pump on*/
+  bsp_board_led_on(BSP_BOARD_LED_2);
+  
+  /*clear system tick counter*/
+  system_tick_counter = 1;
 }
 
-/**@brief Function for the Power Management.
+/*
+ * Function for the responding to pump trigger.
+ */
+void pump_response(void)
+{
+    /*LED turned off to indicate pump off*/
+    bsp_board_led_off(BSP_BOARD_LED_2);
+    uint32_t err_code = app_simple_timer_stop();
+    //uint32_t err_code = app_simple_timer_uninit();
+    APP_ERROR_CHECK(err_code);
+    //state_entry_action_execute();  
+    err_code = app_simple_timer_start(APP_SIMPLE_TIMER_MODE_REPEATED,
+                                       system_timeout_handler,
+                                       TIMEOUT_VALUE,
+                                       NULL);
+    APP_ERROR_CHECK(err_code);
+    /*LED turned on to indicate system timer on*/
+    bsp_board_led_on(BSP_BOARD_LED_0);
+    /*clear pump tick counter*/
+    pump_tick_counter = 1;
+}
+/*
+ *@brief Function for the Power Management.
  */
 static void power_manage(void)
 {
@@ -162,30 +207,15 @@ int main(void)
 
     for (;;)
     {
-        if(system_tick_counter % 60 == 0)
+        /*start pump after PUMP_ACTIVATION_INTERVAL seconds*/
+        if(system_tick_counter % PUMP_ACTIVATION_INTERVAL == 0)
         {
-          bsp_board_led_off(BSP_BOARD_LED_0);
-          uint32_t err_code = app_simple_timer_stop();
-          APP_ERROR_CHECK(err_code);
-          err_code = app_simple_timer_start(APP_SIMPLE_TIMER_MODE_REPEATED,
-                                       pump_timeout_handler,
-                                       PUMP_TIMEOUT_VALUE,
-                                       NULL);
-          APP_ERROR_CHECK(err_code);
-          bsp_board_led_on(BSP_BOARD_LED_2);
-          
-          /*clear system tick counter*/
-          system_tick_counter = 0;
-         }
-        if(pump_tick_counter % 5 == 0)
+          system_response();
+        }
+        /*stop pump after PUMP_ACTIVE_TIME second and restart system timer*/
+        if(pump_tick_counter % PUMP_ACTIVE_TIME == 0)
         {
-          bsp_board_led_off(BSP_BOARD_LED_2);
-          uint32_t err_code = app_simple_timer_stop();
-          APP_ERROR_CHECK(err_code);
-          state_entry_action_execute();
-          /*clear pump tick counter*/
-          pump_tick_counter = 0;
-          
+          pump_response();
         }
 
         power_manage();

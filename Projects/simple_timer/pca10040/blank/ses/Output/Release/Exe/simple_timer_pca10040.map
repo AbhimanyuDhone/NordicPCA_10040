@@ -3716,7 +3716,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ >= __FLASH_segment_start__) && (__init_rodata_end__ <= __FLASH_segment_end__))), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x00000000000002f4                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x00000000000002f4      0xd28
+.text           0x00000000000002f4      0xd30
                 0x00000000000002f4                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x00000000000002f4        0x0 linker stubs
@@ -3797,26 +3797,30 @@ Linker script and memory map
                 0x0000000000000bfc       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
                 0x0000000000000bfc                system_timeout_handler
  .text.pump_timeout_handler
-                0x0000000000000c0c       0x2c Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000000c0c       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
                 0x0000000000000c0c                pump_timeout_handler
- .text.led_and_timer_control.isra.1.constprop.2
-                0x0000000000000c38       0x20 Output/simple_timer_pca10040 Release/Obj/main.o
  .text.app_error_fault_handler
-                0x0000000000000c58       0x2c Output/simple_timer_pca10040 Release/Obj/main.o
-                0x0000000000000c58                app_error_fault_handler
+                0x0000000000000c1c       0x2c Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000000c1c                app_error_fault_handler
+ .text.system_response
+                0x0000000000000c48       0x3c Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000000c48                system_response
+ .text.pump_response
+                0x0000000000000c84       0x3c Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000000c84                pump_response
  .text.startup.main
-                0x0000000000000c84       0xc0 Output/simple_timer_pca10040 Release/Obj/main.o
-                0x0000000000000c84                main
+                0x0000000000000cc0       0x8c Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000000cc0                main
  .text.errata_57
-                0x0000000000000d44       0x34 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x0000000000000d4c       0x34 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
  .text.errata_136
-                0x0000000000000d78       0x40 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x0000000000000d80       0x40 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
  .text.SystemInit
-                0x0000000000000db8      0x264 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
-                0x0000000000000db8                SystemInit
-                0x000000000000101c                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x0000000000000d28                __text_size__ = SIZEOF (.text)
-                0x000000000000101c                __text_load_end__ = __text_end__
+                0x0000000000000dc0      0x264 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x0000000000000dc0                SystemInit
+                0x0000000000001024                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x0000000000000d30                __text_size__ = SIZEOF (.text)
+                0x0000000000001024                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -3827,48 +3831,48 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ >= __FLASH_segment_start__) && (__text_end__ <= __FLASH_segment_end__))), error: .text is too large to fit in FLASH memory segment)
-                0x000000000000101c                __log_const_data_load_start__ = ALIGN (__text_end__, 0x4)
+                0x0000000000001024                __log_const_data_load_start__ = ALIGN (__text_end__, 0x4)
 
 .log_const_data
-                0x000000000000101c        0x0
-                0x000000000000101c                __log_const_data_start__ = .
-                0x000000000000101c                __start_log_const_data = __log_const_data_start__
+                0x0000000000001024        0x0
+                0x0000000000001024                __log_const_data_start__ = .
+                0x0000000000001024                __start_log_const_data = __log_const_data_start__
  *(SORT(.log_const_data*))
-                0x000000000000101c                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x0000000000001024                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000000                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x000000000000101c                __stop_log_const_data = __log_const_data_end__
-                0x000000000000101c                __log_const_data_load_end__ = __log_const_data_end__
+                0x0000000000001024                __stop_log_const_data = __log_const_data_end__
+                0x0000000000001024                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ >= __FLASH_segment_start__) && (__log_const_data_end__ <= __FLASH_segment_end__))), error: .log_const_data is too large to fit in FLASH memory segment)
-                0x000000000000101c                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x0000000000001024                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.nrf_balloc     0x000000000000101c        0x0
-                0x000000000000101c                __nrf_balloc_start__ = .
-                0x000000000000101c                __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x0000000000001024        0x0
+                0x0000000000001024                __nrf_balloc_start__ = .
+                0x0000000000001024                __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
-                0x000000000000101c                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+                0x0000000000001024                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000000                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x000000000000101c                __stop_nrf_balloc = __nrf_balloc_end__
-                0x000000000000101c                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x0000000000001024                __stop_nrf_balloc = __nrf_balloc_end__
+                0x0000000000001024                __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ >= __FLASH_segment_start__) && (__nrf_balloc_end__ <= __FLASH_segment_end__))), error: .nrf_balloc is too large to fit in FLASH memory segment)
-                0x000000000000101c                __nrf_sections_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x0000000000001024                __nrf_sections_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.nrf_sections   0x000000000000101c        0x0
-                0x000000000000101c                __nrf_sections_start__ = .
-                0x000000000000101c                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x0000000000001024        0x0
+                0x0000000000001024                __nrf_sections_start__ = .
+                0x0000000000001024                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x000000000000101c                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x0000000000001024                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x000000000000101c                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x0000000000001024                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ >= __FLASH_segment_start__) && (__nrf_sections_end__ <= __FLASH_segment_end__))), error: .nrf_sections is too large to fit in FLASH memory segment)
-                0x000000000000101c                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x0000000000001024                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .log_dynamic_data
-                0x0000000020000000        0x0 load address 0x000000000000101c
+                0x0000000020000000        0x0 load address 0x0000000000001024
                 0x0000000020000000                __log_dynamic_data_start__ = .
  *(SORT(.log_dynamic_data*))
                 0x0000000020000000                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000000                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x000000000000101c                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x0000000000001024                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ >= __FLASH_segment_start__) && (__log_dynamic_data_load_end__ <= __FLASH_segment_end__))), error: .log_dynamic_data is too large to fit in FLASH memory segment)
 
 .log_dynamic_data_run
@@ -3892,48 +3896,47 @@ Linker script and memory map
                 0x0000000000000000                __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x0000000020000000                __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ >= __RAM_segment_start__) && (__nrf_sections_run_end_end__ <= __RAM_segment_end__))), error: .nrf_sections_run_end is too large to fit in RAM memory segment)
-                0x000000000000101c                __dtors_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x0000000000001024                __dtors_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
-.dtors          0x000000000000101c        0x0
-                0x000000000000101c                __dtors_start__ = .
+.dtors          0x0000000000001024        0x0
+                0x0000000000001024                __dtors_start__ = .
  *(SORT(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x000000000000101c                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x0000000000001024                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x000000000000101c                __dtors_load_end__ = __dtors_end__
+                0x0000000000001024                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ >= __FLASH_segment_start__) && (__dtors_end__ <= __FLASH_segment_end__))), error: .dtors is too large to fit in FLASH memory segment)
-                0x000000000000101c                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x0000000000001024                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x000000000000101c        0x0
-                0x000000000000101c                __ctors_start__ = .
+.ctors          0x0000000000001024        0x0
+                0x0000000000001024                __ctors_start__ = .
  *(SORT(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT(.init_array.*))
-                0x000000000000101c                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x0000000000001024                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x000000000000101c                __ctors_load_end__ = __ctors_end__
+                0x0000000000001024                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ >= __FLASH_segment_start__) && (__ctors_end__ <= __FLASH_segment_end__))), error: .ctors is too large to fit in FLASH memory segment)
-                0x000000000000101c                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x0000000000001024                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x000000000000101c       0x2a
-                0x000000000000101c                __rodata_start__ = .
+.rodata         0x0000000000001024       0x22
+                0x0000000000001024                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.m_board_led_list
-                0x000000000000101c        0x4 Output/simple_timer_pca10040 Release/Obj/boards.o
+                0x0000000000001024        0x4 Output/simple_timer_pca10040 Release/Obj/boards.o
  .rodata.SIMPLE_TIMER
-                0x0000000000001020        0x8 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
-                0x0000000000001020                SIMPLE_TIMER
- *fill*         0x0000000000001028        0x8 
+                0x0000000000001028        0x8 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+                0x0000000000001028                SIMPLE_TIMER
  .rodata.delay_bytecode.7685
                 0x0000000000001030        0x6 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  *fill*         0x0000000000001036        0xa 
  .rodata.delay_bytecode.7368
                 0x0000000000001040        0x6 Output/simple_timer_pca10040 Release/Obj/main.o
                 0x0000000000001046                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x000000000000002a                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000000000022                __rodata_size__ = SIZEOF (.rodata)
                 0x0000000000001046                __rodata_load_end__ = __rodata_end__
 
 .rel.dyn        0x0000000000001048        0x0
@@ -4175,7 +4178,7 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .comment       0x000000000000004c       0x4d Output/simple_timer_pca10040 Release/Obj/main.o
  .comment       0x000000000000004c       0x4d Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_line     0x0000000000000000     0x3bb7
+.debug_line     0x0000000000000000     0x3bbe
  .debug_line    0x0000000000000000      0x2b4 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_line    0x00000000000002b4      0x641 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_line    0x00000000000008f5      0x2f4 Output/simple_timer_pca10040 Release/Obj/app_error.o
@@ -4183,12 +4186,12 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_line    0x0000000000001208      0x8f0 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_line    0x0000000000001af8      0xcd9 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_line    0x00000000000027d1      0x923 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_line    0x00000000000030f4      0x6a7 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_line    0x000000000000379b       0xa9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
- .debug_line    0x0000000000003844       0xb2 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
- .debug_line    0x00000000000038f6      0x2c1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_line    0x00000000000030f4      0x6ae Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_line    0x00000000000037a2       0xa9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+ .debug_line    0x000000000000384b       0xb2 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+ .debug_line    0x00000000000038fd      0x2c1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_info     0x0000000000000000     0xb153
+.debug_info     0x0000000000000000     0xb14c
  .debug_info    0x0000000000000000       0xd5 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_info    0x00000000000000d5     0x1053 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_info    0x0000000000001128      0x7e0 Output/simple_timer_pca10040 Release/Obj/app_error.o
@@ -4196,12 +4199,12 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_info    0x00000000000026af     0x1e53 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_info    0x0000000000004502     0x3025 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_info    0x0000000000007527     0x1d59 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_info    0x0000000000009280      0xc54 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_info    0x0000000000009ed4       0xd9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
- .debug_info    0x0000000000009fad       0xdb Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
- .debug_info    0x000000000000a088     0x10cb Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_info    0x0000000000009280      0xc4d Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_info    0x0000000000009ecd       0xd9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+ .debug_info    0x0000000000009fa6       0xdb Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+ .debug_info    0x000000000000a081     0x10cb Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_abbrev   0x0000000000000000     0x19f9
+.debug_abbrev   0x0000000000000000     0x19c4
  .debug_abbrev  0x0000000000000000       0x12 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_abbrev  0x0000000000000012      0x317 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_abbrev  0x0000000000000329      0x1a9 Output/simple_timer_pca10040 Release/Obj/app_error.o
@@ -4209,12 +4212,12 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_abbrev  0x0000000000000755      0x4bb Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_abbrev  0x0000000000000c10      0x4d0 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_abbrev  0x00000000000010e0      0x3ea Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_abbrev  0x00000000000014ca      0x2ff Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_abbrev  0x00000000000017c9       0x14 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
- .debug_abbrev  0x00000000000017dd       0x14 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
- .debug_abbrev  0x00000000000017f1      0x208 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_abbrev  0x00000000000014ca      0x2ca Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_abbrev  0x0000000000001794       0x14 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+ .debug_abbrev  0x00000000000017a8       0x14 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+ .debug_abbrev  0x00000000000017bc      0x208 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_aranges  0x0000000000000000      0x490
+.debug_aranges  0x0000000000000000      0x498
  .debug_aranges
                 0x0000000000000000       0xe0 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_aranges
@@ -4230,15 +4233,15 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000348       0x90 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_aranges
-                0x00000000000003d8       0x40 Output/simple_timer_pca10040 Release/Obj/main.o
+                0x00000000000003d8       0x48 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_aranges
-                0x0000000000000418       0x20 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+                0x0000000000000420       0x20 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
  .debug_aranges
-                0x0000000000000438       0x20 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+                0x0000000000000440       0x20 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
  .debug_aranges
-                0x0000000000000458       0x38 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x0000000000000460       0x38 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_ranges   0x0000000000000000      0xc00
+.debug_ranges   0x0000000000000000      0xba8
  .debug_ranges  0x0000000000000000       0xd8 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_ranges  0x00000000000000d8       0xe0 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_ranges  0x00000000000001b8       0x18 Output/simple_timer_pca10040 Release/Obj/app_error.o
@@ -4246,30 +4249,30 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_ranges  0x0000000000000200      0x348 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_ranges  0x0000000000000548      0x408 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_ranges  0x0000000000000950      0x188 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_ranges  0x0000000000000ad8      0x100 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_ranges  0x0000000000000bd8       0x28 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_ranges  0x0000000000000ad8       0xa8 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_ranges  0x0000000000000b80       0x28 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_frame    0x0000000000000000      0x8e0
+.debug_frame    0x0000000000000000      0x8cc
  .debug_frame   0x0000000000000000      0x104 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_frame   0x0000000000000104       0x58 Output/simple_timer_pca10040 Release/Obj/app_error.o
  .debug_frame   0x000000000000015c       0xac Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_frame   0x0000000000000208      0x198 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_frame   0x00000000000003a0      0x298 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_frame   0x0000000000000638      0x194 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_frame   0x00000000000007cc       0xb8 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_frame   0x0000000000000884       0x5c Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_frame   0x00000000000007cc       0xa4 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_frame   0x0000000000000870       0x5c Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_loc      0x0000000000000000     0x359e
+.debug_loc      0x0000000000000000     0x3585
  .debug_loc     0x0000000000000000      0x54b Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_loc     0x000000000000054b       0xb5 Output/simple_timer_pca10040 Release/Obj/app_error.o
  .debug_loc     0x0000000000000600      0x274 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_loc     0x0000000000000874      0xb5f Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_loc     0x00000000000013d3     0x16e5 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_loc     0x0000000000002ab8      0x892 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_loc     0x000000000000334a      0x254 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_loc     0x000000000000334a      0x23b Output/simple_timer_pca10040 Release/Obj/main.o
 
 .debug_pubnames
-                0x0000000000000000     0x329b
+                0x0000000000000000     0x32c1
  .debug_pubnames
                 0x0000000000000000      0x4bd Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_pubnames
@@ -4283,9 +4286,9 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_pubnames
                 0x0000000000002772      0x89f Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_pubnames
-                0x0000000000003011      0x16b Output/simple_timer_pca10040 Release/Obj/main.o
+                0x0000000000003011      0x191 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_pubnames
-                0x000000000000317c      0x11f Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x00000000000031a2      0x11f Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
 .debug_pubtypes
                 0x0000000000000000     0x14d2
@@ -4306,7 +4309,7 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_pubtypes
                 0x000000000000131e      0x1b4 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_macro    0x0000000000000000    0x12ee2
+.debug_macro    0x0000000000000000    0x12eee
  .debug_macro   0x0000000000000000      0x202 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_macro   0x0000000000000202      0x8f2 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_macro   0x0000000000000af4      0x6e6 Output/simple_timer_pca10040 Release/Obj/boards.o
@@ -4367,11 +4370,11 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_macro   0x0000000000012909       0x42 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x000000000001294b      0x28c Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000012bd7       0x22 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000012bf9      0x231 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000012e2a       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000012e3a       0xa8 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_macro   0x0000000000012bf9      0x23d Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x0000000000012e36       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x0000000000012e46       0xa8 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_str      0x0000000000000000    0x6d1e9
+.debug_str      0x0000000000000000    0x6d236
  .debug_str     0x0000000000000000    0x65e15 Output/simple_timer_pca10040 Release/Obj/boards.o
                                       0x66b93 (size before relaxing)
  .debug_str     0x0000000000065e15      0x19b Output/simple_timer_pca10040 Release/Obj/app_error.o
@@ -4384,7 +4387,7 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
                                       0x6a350 (size before relaxing)
  .debug_str     0x000000000006c6fd      0x4a5 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
                                       0x69947 (size before relaxing)
- .debug_str     0x000000000006cba2      0x176 Output/simple_timer_pca10040 Release/Obj/main.o
-                                      0x6698b (size before relaxing)
- .debug_str     0x000000000006cd18      0x4d1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_str     0x000000000006cba2      0x1c3 Output/simple_timer_pca10040 Release/Obj/main.o
+                                      0x669d8 (size before relaxing)
+ .debug_str     0x000000000006cd65      0x4d1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
                                       0x5b490 (size before relaxing)
