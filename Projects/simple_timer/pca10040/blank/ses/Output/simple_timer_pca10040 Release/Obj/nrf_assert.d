@@ -1,6 +1,6 @@
 Output/simple_timer_pca10040\ Release/Obj/nrf_assert.o: \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\nrf_assert.c \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\nrf_assert.h \
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\nrf_assert.c \
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52.h \
@@ -14,11 +14,11 @@ Output/simple_timer_pca10040\ Release/Obj/nrf_assert.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52.h \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error.h \
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/stdbool.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\sdk_errors.h \
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\sdk_errors.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\nordic_common.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error_weak.h
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\nordic_common.h \
+ C:\EmbeddedWorkspace\Codebase\components\libraries\util\app_error_weak.h

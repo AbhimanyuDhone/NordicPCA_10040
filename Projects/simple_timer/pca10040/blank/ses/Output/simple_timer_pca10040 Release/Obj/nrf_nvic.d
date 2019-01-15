@@ -1,8 +1,8 @@
 Output/simple_timer_pca10040\ Release/Obj/nrf_nvic.o: \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c \
+ C:\EmbeddedWorkspace\Codebase\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/__crossworks.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h \
+ C:\EmbeddedWorkspace\Codebase\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 3.34/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52.h \
@@ -16,4 +16,4 @@ Output/simple_timer_pca10040\ Release/Obj/nrf_nvic.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52.h \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\EmbeddedWorkspace\nRF5_SDK_15.0.0_a53641a\components\drivers_nrf\nrf_soc_nosd\nrf_error.h
+ C:\EmbeddedWorkspace\Codebase\components\drivers_nrf\nrf_soc_nosd\nrf_error.h

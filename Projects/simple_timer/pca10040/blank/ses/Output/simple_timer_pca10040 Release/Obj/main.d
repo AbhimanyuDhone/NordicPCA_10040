@@ -46,4 +46,5 @@ Output/simple_timer_pca10040\ Release/Obj/main.o: \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  ../../../../../../components/boards/pca10040.h \
  ../../../../../../components/libraries/util/app_error.h \
- ../../../../../../components/libraries/delay/nrf_delay.h
+ ../../../../../../components/libraries/delay/nrf_delay.h \
+ ../../../../../../components/libraries/uart/app_uart.h

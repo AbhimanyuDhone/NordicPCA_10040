@@ -217,7 +217,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_button.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_button.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_button.o
@@ -240,8 +240,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/app_button.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/app_button.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/app_button.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/app_button.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x3f Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0x19 Output/simple_timer_pca10040 Release/Obj/app_button.o
@@ -256,7 +256,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x44 Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_macro   0x0000000000000000       0xcc Output/simple_timer_pca10040 Release/Obj/app_button.o
  .debug_line    0x0000000000000000      0x6c5 Output/simple_timer_pca10040 Release/Obj/app_button.o
- .debug_str     0x0000000000000000    0x671ca Output/simple_timer_pca10040 Release/Obj/app_button.o
+ .debug_str     0x0000000000000000    0x67d2d Output/simple_timer_pca10040 Release/Obj/app_button.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_button.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_button.o
@@ -351,7 +351,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
@@ -373,7 +373,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6b Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .debug_line    0x0000000000000000      0x32a Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
- .debug_str     0x0000000000000000    0x631b7 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
+ .debug_str     0x0000000000000000    0x63672 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_error_handler_gcc.o
@@ -449,7 +449,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xa7 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
@@ -467,7 +467,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_macro   0x0000000000000000       0x1c Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .debug_line    0x0000000000000000      0x5f3 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
- .debug_str     0x0000000000000000    0x66ae9 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
+ .debug_str     0x0000000000000000    0x66fa4 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_error_weak.o
@@ -540,7 +540,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
@@ -565,7 +565,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .debug_line    0x0000000000000000      0x462 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
- .debug_str     0x0000000000000000    0x6393e Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
+ .debug_str     0x0000000000000000    0x63df9 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_scheduler.o
@@ -619,7 +619,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
@@ -643,8 +643,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x3f Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x19 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
@@ -720,7 +720,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_timer.o
@@ -743,8 +743,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x19 Output/simple_timer_pca10040 Release/Obj/app_timer.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_timer.o
@@ -822,8 +822,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
  .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
- .debug_line    0x0000000000000000      0x376 Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
- .debug_str     0x0000000000000000    0x5d317 Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
+ .debug_line    0x0000000000000000      0x367 Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
+ .debug_str     0x0000000000000000    0x5d2fe Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
@@ -884,8 +884,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xa7 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
  .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
- .debug_line    0x0000000000000000      0x2c4 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
- .debug_str     0x0000000000000000    0x5cb30 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
+ .debug_line    0x0000000000000000      0x2b5 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
+ .debug_str     0x0000000000000000    0x5cb17 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
@@ -943,7 +943,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
@@ -963,10 +963,142 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x4e Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .debug_line    0x0000000000000000      0x358 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
- .debug_str     0x0000000000000000    0x62da9 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
+ .debug_str     0x0000000000000000    0x63264 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text          0x0000000000000000        0x0 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .data          0x0000000000000000        0x0 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .bss           0x0000000000000000        0x0 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.nrf_drv_uart_rx.constprop.3
+                0x0000000000000000       0x28 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.uart_event_handler
+                0x0000000000000000       0x58 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.app_uart_init
+                0x0000000000000000       0x84 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.app_uart_get
+                0x0000000000000000       0x20 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.app_uart_put
+                0x0000000000000000       0x40 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.app_uart_flush
+                0x0000000000000000        0x4 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .text.app_uart_close
+                0x0000000000000000       0x28 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .rodata        0x0000000000000000       0x20 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .bss.m_event_handler
+                0x0000000000000000        0x4 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .bss.rx_buffer
+                0x0000000000000000        0x1 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .bss.rx_done   0x0000000000000000        0x1 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .bss.tx_buffer
+                0x0000000000000000        0x1 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .data.app_uart_inst
+                0x0000000000000000       0x14 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_frame   0x0000000000000000       0xd4 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_info    0x0000000000000000     0x16c1 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_abbrev  0x0000000000000000      0x35b Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_loc     0x0000000000000000      0x2f1 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_pubnames
+                0x0000000000000000      0x339 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_pubtypes
+                0x0000000000000000      0x3d6 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_aranges
+                0x0000000000000000       0x50 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_ranges  0x0000000000000000       0xa8 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x262 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x8f2 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x189 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x2e Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x8e Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0xa7 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x2d Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x3b Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x50 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0xe66 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x392 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000     0xccbe Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000     0x1313 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x82 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x4e Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x6b Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x49 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x8c Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x18 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x3f Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x19 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x7b Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x64 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x20 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_macro   0x0000000000000000       0x2d Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_line    0x0000000000000000      0x688 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .debug_str     0x0000000000000000    0x67c10 Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/app_uart.o
+ .ARM.attributes
+                0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/app_uart.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
@@ -1034,8 +1166,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x82 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .debug_macro   0x0000000000000000       0x8e Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
- .debug_line    0x0000000000000000      0x361 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
- .debug_str     0x0000000000000000    0x5bfc9 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
+ .debug_line    0x0000000000000000      0x352 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
+ .debug_str     0x0000000000000000    0x5bfb0 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
@@ -1085,8 +1217,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x82 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
  .debug_macro   0x0000000000000000       0x8e Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
- .debug_line    0x0000000000000000      0x249 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
- .debug_str     0x0000000000000000    0x5ba80 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
+ .debug_line    0x0000000000000000      0x23a Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
+ .debug_str     0x0000000000000000    0x5ba67 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
@@ -1191,7 +1323,7 @@ Discarded input sections
  .text.nrfx_gpiote_in_event_addr_get
                 0x0000000000000000       0x28 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000      0x8f2 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000      0x189 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
@@ -1208,8 +1340,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
  .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
@@ -1292,7 +1424,7 @@ Discarded input sections
  .text.nrfx_timer_compare_int_disable
                 0x0000000000000000       0x10 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000      0x8f2 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000      0x189 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
@@ -1309,8 +1441,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
@@ -1452,7 +1584,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x8f2 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000      0x189 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/bsp.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/bsp.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x1c Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/bsp.o
@@ -1467,8 +1599,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/bsp.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/bsp.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/bsp.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/bsp.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/bsp.o
@@ -1491,10 +1623,11 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x100 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_macro   0x0000000000000000       0x42 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .debug_line    0x0000000000000000      0x7cd Output/simple_timer_pca10040 Release/Obj/bsp.o
- .debug_str     0x0000000000000000    0x67c3f Output/simple_timer_pca10040 Release/Obj/bsp.o
+ .debug_str     0x0000000000000000    0x687a2 Output/simple_timer_pca10040 Release/Obj/bsp.o
  .comment       0x0000000000000000       0x4d Output/simple_timer_pca10040 Release/Obj/bsp.o
  .ARM.attributes
                 0x0000000000000000       0x39 Output/simple_timer_pca10040 Release/Obj/bsp.o
+ .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/main.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/main.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/main.o
  .group         0x0000000000000000        0x8 Output/simple_timer_pca10040 Release/Obj/main.o
@@ -1540,7 +1673,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x189 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x89 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x71 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000000000      0x6e6 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x0000000000000000      0x812 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/main.o
@@ -1555,8 +1688,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000      0x3a3 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x36 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000000000      0x153 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000000000      0x125 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x0000000000000000      0x26b Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x0000000000000000      0x11f Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000       0x16 Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000      0x16d Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_macro   0x0000000000000000      0x4f2 Output/simple_timer_pca10040 Release/Obj/main.o
@@ -4123,6 +4256,7 @@ LOAD Output/simple_timer_pca10040 Release/Obj/app_timer.o
 LOAD Output/simple_timer_pca10040 Release/Obj/app_util_platform.o
 LOAD Output/simple_timer_pca10040 Release/Obj/nrf_assert.o
 LOAD Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o
+LOAD Output/simple_timer_pca10040 Release/Obj/app_uart.o
 LOAD Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o
 LOAD Output/simple_timer_pca10040 Release/Obj/nrf_soc.o
 LOAD Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
@@ -4178,31 +4312,31 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .comment       0x000000000000004c       0x4d Output/simple_timer_pca10040 Release/Obj/main.o
  .comment       0x000000000000004c       0x4d Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_line     0x0000000000000000     0x3bbe
+.debug_line     0x0000000000000000     0x3bbc
  .debug_line    0x0000000000000000      0x2b4 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
  .debug_line    0x00000000000002b4      0x641 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_line    0x00000000000008f5      0x2f4 Output/simple_timer_pca10040 Release/Obj/app_error.o
- .debug_line    0x0000000000000be9      0x61f Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_line    0x0000000000001208      0x8f0 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_line    0x0000000000001af8      0xcd9 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_line    0x00000000000027d1      0x923 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_line    0x00000000000030f4      0x6ae Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_line    0x00000000000037a2       0xa9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
- .debug_line    0x000000000000384b       0xb2 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
- .debug_line    0x00000000000038fd      0x2c1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_line    0x00000000000008f5      0x2e5 Output/simple_timer_pca10040 Release/Obj/app_error.o
+ .debug_line    0x0000000000000bda      0x61f Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_line    0x00000000000011f9      0x8f0 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_line    0x0000000000001ae9      0xcd9 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_line    0x00000000000027c2      0x923 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_line    0x00000000000030e5      0x6e8 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_line    0x00000000000037cd       0x9a Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+ .debug_line    0x0000000000003867       0xa3 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+ .debug_line    0x000000000000390a      0x2b2 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_info     0x0000000000000000     0xb14c
- .debug_info    0x0000000000000000       0xd5 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
- .debug_info    0x00000000000000d5     0x1053 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_info    0x0000000000001128      0x7e0 Output/simple_timer_pca10040 Release/Obj/app_error.o
- .debug_info    0x0000000000001908      0xda7 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_info    0x00000000000026af     0x1e53 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_info    0x0000000000004502     0x3025 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_info    0x0000000000007527     0x1d59 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_info    0x0000000000009280      0xc4d Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_info    0x0000000000009ecd       0xd9 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
- .debug_info    0x0000000000009fa6       0xdb Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
- .debug_info    0x000000000000a081     0x10cb Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+.debug_info     0x0000000000000000     0xb117
+ .debug_info    0x0000000000000000       0xcb Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
+ .debug_info    0x00000000000000cb     0x1053 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_info    0x000000000000111e      0x7e0 Output/simple_timer_pca10040 Release/Obj/app_error.o
+ .debug_info    0x00000000000018fe      0xda7 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_info    0x00000000000026a5     0x1e53 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_info    0x00000000000044f8     0x3025 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_info    0x000000000000751d     0x1d59 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_info    0x0000000000009276      0xc54 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_info    0x0000000000009eca       0xc0 Output/simple_timer_pca10040 Release/Obj/ses_nRF_Startup.o
+ .debug_info    0x0000000000009f8a       0xc2 Output/simple_timer_pca10040 Release/Obj/ses_nrf52_Vectors.o
+ .debug_info    0x000000000000a04c     0x10cb Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
 .debug_abbrev   0x0000000000000000     0x19c4
  .debug_abbrev  0x0000000000000000       0x12 Output/simple_timer_pca10040 Release/Obj/thumb_crt0.o
@@ -4291,7 +4425,7 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
                 0x00000000000031a2      0x11f Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
 .debug_pubtypes
-                0x0000000000000000     0x14d2
+                0x0000000000000000     0x14dc
  .debug_pubtypes
                 0x0000000000000000      0x249 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_pubtypes
@@ -4305,89 +4439,90 @@ OUTPUT(Output/Release/Exe/simple_timer_pca10040.elf elf32-littlearm)
  .debug_pubtypes
                 0x0000000000000de0      0x37b Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
  .debug_pubtypes
-                0x000000000000115b      0x1c3 Output/simple_timer_pca10040 Release/Obj/main.o
+                0x000000000000115b      0x1cd Output/simple_timer_pca10040 Release/Obj/main.o
  .debug_pubtypes
-                0x000000000000131e      0x1b4 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                0x0000000000001328      0x1b4 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_macro    0x0000000000000000    0x12eee
+.debug_macro    0x0000000000000000    0x13153
  .debug_macro   0x0000000000000000      0x202 Output/simple_timer_pca10040 Release/Obj/boards.o
  .debug_macro   0x0000000000000202      0x8f2 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000000af4      0x6e6 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000011da      0x189 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000001363       0x89 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000013ec       0x1c Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000001408       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000000142a       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000000144c       0x2d Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000001479       0x3b Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000014b4       0x50 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000001504      0xe66 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000000236a      0x392 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000026fc     0xccbe Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000000f3ba     0x1313 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000106cd       0x82 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000001074f       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010771      0x3a3 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010b14       0x36 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010b4a      0x153 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010c9d      0x125 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010dc2       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010dd8      0x16d Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000010f45      0x4f2 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011437       0x3f Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011476       0x6b Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000114e1       0x8e Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000001156f       0xa7 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011616       0x49 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000001165f       0x8c Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000116eb       0x19 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011704       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000001171a       0x7b Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011795       0x64 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x00000000000117f9       0x20 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011819       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x000000000001182f      0x25a Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011a89      0x16d Output/simple_timer_pca10040 Release/Obj/boards.o
- .debug_macro   0x0000000000011bf6       0xfa Output/simple_timer_pca10040 Release/Obj/app_error.o
- .debug_macro   0x0000000000011cf0       0x35 Output/simple_timer_pca10040 Release/Obj/app_error.o
- .debug_macro   0x0000000000011d25       0x71 Output/simple_timer_pca10040 Release/Obj/app_error.o
- .debug_macro   0x0000000000011d96      0x248 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x0000000000011fde       0x1c Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x0000000000011ffa       0x10 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x000000000001200a       0x94 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
- .debug_macro   0x000000000001209e      0x282 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x0000000000012320       0x3c Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x000000000001235c       0x3c Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x0000000000012398       0x45 Output/simple_timer_pca10040 Release/Obj/app_timer.o
- .debug_macro   0x00000000000123dd      0x2cc Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x00000000000126a9       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x00000000000126c5       0x16 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x00000000000126db       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x00000000000126f7       0x54 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x000000000001274b       0x37 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000012782       0x10 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000012792      0x177 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x0000000000012909       0x42 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
- .debug_macro   0x000000000001294b      0x28c Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000012bd7       0x22 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
- .debug_macro   0x0000000000012bf9      0x23d Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000012e36       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
- .debug_macro   0x0000000000012e46       0xa8 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+ .debug_macro   0x0000000000000af4      0x812 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001306      0x189 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000000148f       0x89 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001518       0x1c Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001534       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001556       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001578       0x2d Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000015a5       0x3b Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000015e0       0x50 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000001630      0xe66 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000002496      0x392 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000002828     0xccbe Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000000f4e6     0x1313 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000107f9       0x82 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000001087b       0x22 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000001089d      0x3a3 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000010c40       0x36 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000010c76      0x26b Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000010ee1      0x11f Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011000       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011016      0x16d Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011183      0x4f2 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011675       0x3f Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000116b4       0x6b Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000001171f       0x8e Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000117ad       0xa7 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011854       0x49 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x000000000001189d       0x8c Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011929       0x19 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011942       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011958       0x7b Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x00000000000119d3       0x64 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011a37       0x20 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011a57       0x16 Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011a6d      0x25a Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011cc7      0x16d Output/simple_timer_pca10040 Release/Obj/boards.o
+ .debug_macro   0x0000000000011e34       0xfa Output/simple_timer_pca10040 Release/Obj/app_error.o
+ .debug_macro   0x0000000000011f2e       0x35 Output/simple_timer_pca10040 Release/Obj/app_error.o
+ .debug_macro   0x0000000000011f63       0x71 Output/simple_timer_pca10040 Release/Obj/app_error.o
+ .debug_macro   0x0000000000011fd4      0x248 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x000000000001221c       0x1c Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x0000000000012238       0x10 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x0000000000012248       0x94 Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+ .debug_macro   0x00000000000122dc      0x282 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x000000000001255e       0x3c Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x000000000001259a       0x3c Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x00000000000125d6       0x45 Output/simple_timer_pca10040 Release/Obj/app_timer.o
+ .debug_macro   0x000000000001261b      0x2cc Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x00000000000128e7       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012903       0x16 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012919       0x1c Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012935       0x54 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012989       0x37 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x00000000000129c0       0x10 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x00000000000129d0      0x177 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012b47       0x42 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+ .debug_macro   0x0000000000012b89      0x28c Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_macro   0x0000000000012e15       0x22 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+ .debug_macro   0x0000000000012e37      0x246 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x000000000001307d       0x10 Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x000000000001308d       0x1e Output/simple_timer_pca10040 Release/Obj/main.o
+ .debug_macro   0x00000000000130ab       0xa8 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
 
-.debug_str      0x0000000000000000    0x6d236
- .debug_str     0x0000000000000000    0x65e15 Output/simple_timer_pca10040 Release/Obj/boards.o
-                                      0x66b93 (size before relaxing)
- .debug_str     0x0000000000065e15      0x19b Output/simple_timer_pca10040 Release/Obj/app_error.o
-                                      0x5cb25 (size before relaxing)
- .debug_str     0x0000000000065fb0     0x180d Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
-                                      0x66ed8 (size before relaxing)
- .debug_str     0x00000000000677bd      0xead Output/simple_timer_pca10040 Release/Obj/app_timer.o
-                                      0x66b5d (size before relaxing)
- .debug_str     0x000000000006866a     0x4093 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
-                                      0x6a350 (size before relaxing)
- .debug_str     0x000000000006c6fd      0x4a5 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
-                                      0x69947 (size before relaxing)
- .debug_str     0x000000000006cba2      0x1c3 Output/simple_timer_pca10040 Release/Obj/main.o
-                                      0x669d8 (size before relaxing)
- .debug_str     0x000000000006cd65      0x4d1 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
-                                      0x5b490 (size before relaxing)
+.debug_str      0x0000000000000000    0x6df08
+ .debug_str     0x0000000000000000    0x6690e Output/simple_timer_pca10040 Release/Obj/boards.o
+                                      0x676f6 (size before relaxing)
+ .debug_str     0x000000000006690e      0x12b Output/simple_timer_pca10040 Release/Obj/app_error.o
+                                      0x5cb0c (size before relaxing)
+ .debug_str     0x0000000000066a39     0x180d Output/simple_timer_pca10040 Release/Obj/app_simple_timer.o
+                                      0x67a3b (size before relaxing)
+ .debug_str     0x0000000000068246      0xead Output/simple_timer_pca10040 Release/Obj/app_timer.o
+                                      0x676c0 (size before relaxing)
+ .debug_str     0x00000000000690f3     0x4093 Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o
+                                      0x6aeb3 (size before relaxing)
+ .debug_str     0x000000000006d186      0x4a5 Output/simple_timer_pca10040 Release/Obj/nrfx_timer.o
+                                      0x6a4aa (size before relaxing)
+ .debug_str     0x000000000006d62b      0x41b Output/simple_timer_pca10040 Release/Obj/main.o
+                                      0x67799 (size before relaxing)
+ .debug_str     0x000000000006da46      0x4c2 Output/simple_timer_pca10040 Release/Obj/system_nrf52.o
+                                      0x5b477 (size before relaxing)

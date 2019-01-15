@@ -11,6 +11,7 @@
 "Output/simple_timer_pca10040 Release/Obj/app_util_platform.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_assert.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o"
+"Output/simple_timer_pca10040 Release/Obj/app_uart.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_soc.o"
 "Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o"
