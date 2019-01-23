@@ -47,12 +47,24 @@
  * For a more detailed description of the functionality, see the SDK documentation.
  */
 
-#include "app_simple_timer.h"
+
 #include <stdio.h>
-#include "boards.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include "app_uart.h"
 #include "app_error.h"
 #include "nrf_delay.h"
-#include "app_uart.h"
+#include "app_simple_timer.h"
+#include "nrf.h"
+#include "bsp.h"
+#include "boards.h"
+
+#if defined (UART_PRESENT)
+#include "nrf_uart.h"
+#endif
+#if defined (UARTE_PRESENT)
+#include "nrf_uarte.h"
+#endif
 
 #define TIMEOUT_VALUE                    31250                          /**< 1 seconds timer time-out value. */
 #define TOGGLE_LED_COUNTER               (500 / (TIMEOUT_VALUE / 1000)) /**< Interval for toggling a LED. Yields to 500 mseconds. */
@@ -63,10 +75,17 @@
 #define PUMP_ACTIVATION_INTERVAL             15                             /**< Indicates time in seconds between pump activation*/
 #define PUMP_ACTIVE_TIME                     5                             /**< Indicates time in seconds the pump is activated*/
 
+#define MAX_TEST_DATA_BYTES     (15U)                /**< max number of test bytes to be used for tx and rx. */
+#define UART_TX_BUF_SIZE 256                         /**< UART TX buffer size. */
+#define UART_RX_BUF_SIZE 256                         /**< UART RX buffer size. */
+
 /* LED 0: System timer
  * LED 1: Application indicator
  * LED 2: Pump indicator
  */
+
+//#define UART_HWFC APP_UART_FLOW_CONTROL_DISABLED
+
 
 /**@brief Application states. */
 typedef enum
@@ -96,7 +115,17 @@ void app_error_fault_handler(uint32_t id, uint32_t pc, uint32_t info)
     }
 }
 
-
+void uart_error_handle(app_uart_evt_t * p_event)
+{
+    if (p_event->evt_type == APP_UART_COMMUNICATION_ERROR)
+    {
+        APP_ERROR_HANDLER(p_event->data.error_communication);
+    }
+    else if (p_event->evt_type == APP_UART_FIFO_ERROR)
+    {
+        APP_ERROR_HANDLER(p_event->data.error_code);
+    }
+}
 /**@brief Function for toggling a LED and starting a timer.
  *
  * @param[in] led_id     ID of the LED to toggle.
@@ -196,29 +225,52 @@ int main(void)
     /*initialize app simple timer using Nordic App libraries*/
     uint32_t err_code = app_simple_timer_init();
     APP_ERROR_CHECK(err_code);
+    const app_uart_comm_params_t comm_params =
+      {
+          RX_PIN_NUMBER,
+          TX_PIN_NUMBER,
+          RTS_PIN_NUMBER,
+          CTS_PIN_NUMBER,
+          APP_UART_FLOW_CONTROL_ENABLED,
+          false,
+          #if defined (UART_PRESENT)
+          NRF_UART_BAUDRATE_115200
+#else
+          NRF_UARTE_BAUDRATE_115200
+#endif  
+      };
+      APP_UART_FIFO_INIT(&comm_params,
+                         UART_RX_BUF_SIZE,
+                         UART_TX_BUF_SIZE,
+                         uart_error_handle,
+                         APP_IRQ_PRIORITY_LOWEST,
+                         err_code);
 
-    bsp_board_init(BSP_INIT_LEDS);
+      APP_ERROR_CHECK(err_code);
 
-    /*turn on Led 1 to indicate application started*/
-    bsp_board_led_on(BSP_BOARD_LED_1);
+      bsp_board_init(BSP_INIT_LEDS);
 
-    nrf_delay_ms(GENERIC_DELAY_TIME);
-    state_entry_action_execute();
+      /*turn on Led 1 to indicate application started*/
+      bsp_board_led_on(BSP_BOARD_LED_1);
 
+      nrf_delay_ms(GENERIC_DELAY_TIME);
+      //state_entry_action_execute();
+      printf("\r\nUART works.\r\n");
 
-    for (;;)
-    {
-        /*start pump after PUMP_ACTIVATION_INTERVAL seconds*/
-        if(system_tick_counter % PUMP_ACTIVATION_INTERVAL == 0)
-        {
-          system_response();
-        }
-        /*stop pump after PUMP_ACTIVE_TIME second and restart system timer*/
-        if(pump_tick_counter % PUMP_ACTIVE_TIME == 0)
-        {
-          pump_response();
-        }
+      for (;;)
+      {
+          printf("\r\nUART works.\r\n");
+          /*start pump after PUMP_ACTIVATION_INTERVAL seconds*/
+//          if(system_tick_counter % PUMP_ACTIVATION_INTERVAL == 0)
+//          {
+//            system_response();
+//          }
+//          /*stop pump after PUMP_ACTIVE_TIME second and restart system timer*/
+//          if(pump_tick_counter % PUMP_ACTIVE_TIME == 0)
+//          {
+//            pump_response();
+//          }
 
-        power_manage();
-    }
+          power_manage();
+      }
 }

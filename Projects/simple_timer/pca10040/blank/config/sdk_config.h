@@ -494,6 +494,12 @@
 #ifndef APP_UART_ENABLED
 #define APP_UART_ENABLED 1
 #endif
+
+// <e> APP_UART - app_fifo_uart - UART driver
+//==========================================================
+#ifndef APP_UART
+#define APP_UART 1
+#endif
 // <o> APP_UART_DRIVER_INSTANCE  - UART instance used
  
 // <0=> 0 
@@ -964,7 +970,7 @@
 // <e> NRF_BALLOC_ENABLED - nrf_balloc - Block allocator module
 //==========================================================
 #ifndef NRF_BALLOC_ENABLED
-#define NRF_BALLOC_ENABLED 0
+#define NRF_BALLOC_ENABLED 1
 #endif
 // <e> NRF_BALLOC_CONFIG_DEBUG_ENABLED - Enables debug mode in the module.
 //==========================================================
@@ -1021,7 +1027,7 @@
  
 
 #ifndef NRF_MEMOBJ_ENABLED
-#define NRF_MEMOBJ_ENABLED 0
+#define NRF_MEMOBJ_ENABLED 1
 #endif
 
 // <q> NRF_STRERROR_ENABLED  - nrf_strerror - Library for converting error code to string.
