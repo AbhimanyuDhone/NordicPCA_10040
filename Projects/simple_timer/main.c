@@ -255,11 +255,12 @@ int main(void)
 
       nrf_delay_ms(GENERIC_DELAY_TIME);
       //state_entry_action_execute();
-      printf("\r\nUART works.\r\n");
+      //app_uart_put("H");
+      //printf("\r\nUART works.\r\n");
 
       for (;;)
       {
-          printf("\r\nUART works.\r\n");
+          //printf("\r\nUART works.\r\n");
           /*start pump after PUMP_ACTIVATION_INTERVAL seconds*/
 //          if(system_tick_counter % PUMP_ACTIVATION_INTERVAL == 0)
 //          {

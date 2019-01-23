@@ -13,6 +13,7 @@
 "Output/simple_timer_pca10040 Release/Obj/nrf_strerror.o"
 "Output/simple_timer_pca10040 Release/Obj/app_uart_fifo.o"
 "Output/simple_timer_pca10040 Release/Obj/app_fifo.o"
+"Output/simple_timer_pca10040 Release/Obj/retarget.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_nvic.o"
 "Output/simple_timer_pca10040 Release/Obj/nrf_soc.o"
 "Output/simple_timer_pca10040 Release/Obj/nrfx_gpiote.o"

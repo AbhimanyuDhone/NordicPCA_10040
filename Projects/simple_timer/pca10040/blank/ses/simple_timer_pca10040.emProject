@@ -50,6 +50,7 @@
       <file file_name="../../../../../../components/libraries/strerror/nrf_strerror.c" />
       <file file_name="../../../../../../components/libraries/uart/app_uart_fifo.c" />
       <file file_name="../../../../../../components/libraries/fifo/app_fifo.c" />
+      <file file_name="../../../../../../components/libraries/uart/retarget.c" />
     </folder>
     <folder Name="nRF_Drivers">
       <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c" />
